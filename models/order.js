@@ -3,7 +3,7 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 // create our User model
-class User extends Model {
+class Order extends Model {
   // set up method to run on instance data (per user) to check password
 //   checkPassword(loginPw) {
 //     return bcrypt.compareSync(loginPw, this.password);
@@ -11,29 +11,23 @@ class User extends Model {
 }
 
 // create fields/columns for User model
-User.init(
+Order.init(
   {
-    name: {
-      Type: DataTypes.STRING, 
+    userId: {
+      Type: DataTypes.INTEGER, 
       allowNull: false
     },
-    userType: {
-        Type: DataTypes.STRING, //Customer or Admin
-        allowNull: false
-      },
-    email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        isEmail: true
-      }
+    productId: {
+      Type: DataTypes.INTEGER, 
+      allowNull: false
     },
-    password: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: [2]
-      }
+    quantity: {
+      Type: DataTypes.INTEGER, 
+      allowNull: false
+    },
+    totalAmount: {
+      Type: DataTypes.PRICE, 
+      allowNull: false
     }
   },
 //   {
@@ -49,4 +43,4 @@ User.init(
   }
 );
 
-module.exports = User;
+module.exports = Order;
