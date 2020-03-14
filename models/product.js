@@ -14,56 +14,56 @@ class Product extends Model {
 Product.init(
   {
     name: {
-      Type: DataTypes.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     CollectionCategory: {
-      Type: DataTypes.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     Collection: {
-      Type: DataTypes.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     imageURL: {
-      Type: DataTypes.STRING,
+      type: DataTypes.STRING,
       isURL: true
     },
     Price: {
-      type: DataTypes.Price,
+      type: DataTypes.INTEGER,
       allowNull: false
     },
     Color: {
-      Type: DataTypes.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     Design: {
-      Type: DataTypes.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     Brand: {
-      Type: DataTypes.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     Size: {
-      Type: DataTypes.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     Slogan: {
-      Type: DataTypes.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     }
   },
-  //   {
-  //     hooks: {
-  //       // set up beforeCreate lifecycle "hook" functionality
-  //       async beforeCreate(newUserData) {
-  //         const hashedPw = await bcrypt.hash(newUserData.password, 10);
-  //         newUserData.password = hashedPw;
-  //         return newUserData;
-  //       }
-  //     },
-  sequelize
+  {
+    //     hooks: {
+    //       // set up beforeCreate lifecycle "hook" functionality
+    //       async beforeCreate(newUserData) {
+    //         const hashedPw = await bcrypt.hash(newUserData.password, 10);
+    //         newUserData.password = hashedPw;
+    //         return newUserData;
+    //       }
+    //     },
+    sequelize
   }
 );
 
