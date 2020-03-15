@@ -54,16 +54,16 @@ Product.init(
       allowNull: false
     }
   },
-  //   {
-  //     hooks: {
-  //       // set up beforeCreate lifecycle "hook" functionality
-  //       async beforeCreate(newUserData) {
-  //         const hashedPw = await bcrypt.hash(newUserData.password, 10);
-  //         newUserData.password = hashedPw;
-  //         return newUserData;
-  //       }
-  //     },
-  sequelize
+  {
+    //     hooks: {
+    //       // set up beforeCreate lifecycle "hook" functionality
+    //       async beforeCreate(newUserData) {
+    //         const hashedPw = await bcrypt.hash(newUserData.password, 10);
+    //         newUserData.password = hashedPw;
+    //         return newUserData;
+    //       }
+    //     },
+    sequelize
   }
 );
 
