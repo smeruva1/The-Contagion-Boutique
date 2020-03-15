@@ -14,11 +14,11 @@ class User extends Model {
 User.init(
   {
     name: {
-      Type: DataTypes.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     userType: {
-      Type: DataTypes.STRING, //Customer or Admin
+      type: DataTypes.STRING, //Customer or Admin
       allowNull: false
     },
     email: {
