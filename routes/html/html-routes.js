@@ -1,11 +1,11 @@
 const router = require('express').Router();
 
-const { getBurgers } = require('../../controllers/');
+const { getProducts } = require('../../controllers/contagion_controllers');
 
 router.get('/', (req, res) => {
-    getBurgers()
-        .then(burgerdata => {
-            res.render('home', { burgers: burgerdata });
+    getProducts()
+        .then(productdata => {
+            res.render('home', { product: productdata });
         })
         .catch(err => {
             res.status(500).end();
