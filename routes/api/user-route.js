@@ -1,6 +1,6 @@
-// import express router
+//defining middleware as it allows us to group the route handlers
 const router = require('express').Router();
-// import models
+//Import tables definded in Models folder
 const { Product, User, Order } = require('../../models');
 
 // get all Users with associated orders
