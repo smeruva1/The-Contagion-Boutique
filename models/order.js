@@ -13,7 +13,6 @@ class Order extends Model {
 // create fields/columns for User model
 Order.init(
   {
-<<<<<<< HEAD
     userId: {
       Type: DataTypes.INTEGER,
       allowNull: false
@@ -40,8 +39,7 @@ Order.init(
     //         return newUserData;
     //       }
     //     },
-    sequelize
-=======
+    sequelize,
     // userId: {
     //   type: DataTypes.INTEGER,
     //   allowNull: false
@@ -59,17 +57,17 @@ Order.init(
       allowNull: false
     }
   },
-    {
-  //     hooks: {
-  //       // set up beforeCreate lifecycle "hook" functionality
-  //       async beforeCreate(newUserData) {
-  //         const hashedPw = await bcrypt.hash(newUserData.password, 10);
-  //         newUserData.password = hashedPw;
-  //         return newUserData;
-  //       }
-  //     },
-  sequelize
->>>>>>> 8c71b42eb0b7466846746c424aa4dc4415479a74
+  {
+    //     hooks: {
+    //       // set up beforeCreate lifecycle "hook" functionality
+    //       async beforeCreate(newUserData) {
+    //         const hashedPw = await bcrypt.hash(newUserData.password, 10);
+    //         newUserData.password = hashedPw;
+    //         return newUserData;
+    //       }
+    //     },
+    sequelize
+
   }
 );
 
