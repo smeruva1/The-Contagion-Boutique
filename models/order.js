@@ -13,33 +13,6 @@ class Order extends Model {
 // create fields/columns for User model
 Order.init(
   {
-    userId: {
-      Type: DataTypes.INTEGER,
-      allowNull: false
-    },
-    productId: {
-      Type: DataTypes.INTEGER,
-      allowNull: false
-    },
-    quantity: {
-      Type: DataTypes.INTEGER,
-      allowNull: false
-    },
-    totalAmount: {
-      Type: DataTypes.PRICE,
-      allowNull: false
-    }
-  },
-  {
-    //     hooks: {
-    //       // set up beforeCreate lifecycle "hook" functionality
-    //       async beforeCreate(newUserData) {
-    //         const hashedPw = await bcrypt.hash(newUserData.password, 10);
-    //         newUserData.password = hashedPw;
-    //         return newUserData;
-    //       }
-    //     },
-    sequelize,
     // userId: {
     //   type: DataTypes.INTEGER,
     //   allowNull: false
@@ -67,7 +40,6 @@ Order.init(
     //       }
     //     },
     sequelize
-
   }
 );
 
