@@ -1,5 +1,7 @@
+//Import sequelize a promise-based Node.js ORM for MySQL
 const Sequelize = require('sequelize');
 
+//Import dotenv to load environment variables fron .env file.
 require('dotenv').config();
 
 // create connection to our db
