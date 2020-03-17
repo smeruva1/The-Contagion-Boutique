@@ -1,6 +1,7 @@
+// import express.Router()
 const router = require('express').Router();
 
-const { getBurgers } = require('../../controllers/');
+const { getBurgers } = require('../../controllers/contagion_controllers');
 
 router.get('/', (req, res) => {
     getBurgers()
