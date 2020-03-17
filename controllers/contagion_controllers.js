@@ -198,3 +198,6 @@ const deleteOrder = () => {
     });
 };
 
+module.exports = {
+    getProducts, getSingleProduct, createProduct, updateProduct, deleteProduct, getUsers, getSingleUser, createUser, updateUser, deleteUser, getOrders, getSingleOrder, createOrder, updateOrder, deleteOrder
+};
