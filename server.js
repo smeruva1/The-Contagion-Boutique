@@ -4,8 +4,7 @@ const express = require('express');
 const routes = require('./routes');
 //create sequelize obj from connections definded in connection
 const sequelize = require('./config/connection');
-
-//const expressHandlebars = require('express-handlebars');
+const expressHandlebars = require('express-handlebars');
 
 //set up express middleware to parse both json and urlencoded
 const app = express();

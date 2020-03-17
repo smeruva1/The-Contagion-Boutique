@@ -9,7 +9,8 @@ router.get('/', (req, res) => {
   User.findAll({
     include: [Order]
   })
-    .then(userdata => res.json(userdata))
+  //getUsers()
+     .then(userdata => res.json(userdata))
     .catch(err => {
       console.log(err);
       res.json(err);
