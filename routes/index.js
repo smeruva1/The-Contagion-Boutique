@@ -3,10 +3,10 @@ const router = require("express").Router();
 
 // collect all api endpoints
 const apiRoutes = require("./api");
-//const htmlRoutes = require("./html/html-routes");
+const htmlRoutes = require("./html/html-routes");
 
 //Load router-level middleware by using the router.use() 
 router.use("/api", apiRoutes);
-//router.use("/", htmlRoutes);
+router.use("/", htmlRoutes);
 
 module.exports = router;

@@ -1,7 +1,7 @@
 // import other models
-const Product = require('./Product');
-const User = require('./User');
-const Order = require('./Order');
+const Product = require('./product');
+const User = require('./user');
+const Order = require('./order');
 
 // connect (associate) models
 User.hasMany(Order, {

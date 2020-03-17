@@ -1,0 +1,66 @@
+<div class="row">
+  {{!-- create two columns --}}
+  <div class="col-12 col-md-3">
+    <h2>Create a Cat</h2>
+    <form id="cat-form">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Cat name" name="cat-name" />
+      </div>
+      <button class="btn btn-block btn-outline-success">Submit New 😺</button>
+    </form>
+  </div>
+
+  <div class="col-12 col-md-9">
+    <div class="card mb-4">
+      <h3 class="card-header">
+        Cats Not Adopted
+      </h3>
+      <ul class="list-group-flush">
+        {{!-- loop through cats from handlebars and print out cats that are NOT adopted --}}
+        {{#each cats}}
+        {{#unless this.adopted}}
+        <li class="list-group-item d-flex justify-content-between align-items-center align-center">
+          <h4>{{this.cat_name}}</h4>
+          <div>
+            {{!-- adopt a cat --}}
+            <button class="btn btn-info adoptCat" data-catid="{{this.id}}">
+              Adopt Me
+            </button>
+            {{!-- delete a cat --}}
+            <button class="btn btn-danger deleteCat" data-catid="{{this.id}}">
+              Delete Me
+            </button>
+          </div>
+        </li>
+        {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="card mb-4">
+      <h3 class="card-header">
+        Cats Adopted
+      </h3>
+      <ul class="list-group-flush">
+        {{!-- loop through cats from handlebars and print out cats that are  adopted --}}
+        {{#each cats}}
+        {{#if this.adopted}}
+        <li class="list-group-item d-flex justify-content-between align-items-center align-center">
+          <h4>{{this.cat_name}}</h4>
+          <div>
+            {{!-- delete a cat --}}
+            <button class="btn btn-danger deleteCat" data-catid="{{this.id}}">
+              Delete Me
+            </button>
+          </div>
+        </li>
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+
+
+</div>
+
+<script src="./assets/js/cats.js" type="text/javascript"></script>
