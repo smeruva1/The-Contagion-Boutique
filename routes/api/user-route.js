@@ -74,7 +74,7 @@ router.put('/:id', (req, res) => {
 
 // delete user by id
 router.delete('/:id', (req, res) => {
-  User.destroy(req.body, {
+  User.destroy({
     where: {
       id: req.params.id
     }
