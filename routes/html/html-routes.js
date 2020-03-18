@@ -7,11 +7,10 @@ const {User, Product, Order} = require('../../models');
 //const apiRoutes = require("../api");
 
 router.get('/', (req, res) => {
-    Product.findAll({
-        include: [Order]
-      })
+    Product.findAll()
         //getProducts()
         .then(productdata => {
+            console.log(productdata);
             res.render('home', { product: productdata });
         })
         .catch(err => {
