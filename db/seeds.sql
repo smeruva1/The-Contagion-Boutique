@@ -4,6 +4,9 @@ INSERT INTO products
   (name, CollectionCategory, Collection, imageURL, Price, Color, Design, Brand, Size, Slogan, createdAt, UpdatedAt)
 VALUES
   ('Cashmere Quarantine Suit', 'BURBERRRY - Clothing', 'La Collection CORONA Pretentieuse', '', 7190, 'Ligh Camel', 'Tartan Plaid', 'Burberry', 2, "They might cancel Coachella, but they'll never cancel your love of Plaid!",now(), now());
+
+VALUES
+  ('Cashmere Quarantine Suit', 'BURBERRRY - Clothing', 'La Collection CORONA Pretentieuse', '', 7190, 'Ligh Camel', 'Tartan Plaid', 'Burberry', 2, "They might cancel Coachella, but they'll never cancel your love of Plaid!",now(), now());
   
 SELECT * FROM db_contagion.products;
 
