@@ -1,3 +1,39 @@
+// function loadproduct(imgEl) {
+    
+//     console.log(imgEl.value );
+
+// }
+
+// href="/catalog/products"
+
+  $('.card-img-top1').on('click', function() {
+    //alert("clicked");
+    // get product id
+    const productID = $(this).attr('data-prodid');
+    console.log(productID);
+  
+    window.location = '/catalog/products/'+productID;
+    
+  });
+
+
+//   // get one Product with associated orders
+// router.get('/:id', (req, res) => {
+//     Product.findOne({
+//       where: {
+//         id: req.params.id
+//       },
+//       include: [Order]
+//     })
+//       .then(Productdata => res.json(Productdata))
+//       .catch(err => {
+//         console.log(err);
+//         res.json(err);
+//       });
+//   });
+  
+  
+
 // // listen for form submission
 // $('#cat-form').on('submit', function(event) {
 //     event.preventDefault();
