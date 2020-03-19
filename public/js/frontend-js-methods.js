@@ -84,4 +84,3 @@
 //       location.reload();
 //     });
 //   });
-  
