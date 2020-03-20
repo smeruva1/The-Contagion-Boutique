@@ -16,7 +16,7 @@ router.get('/catalog/products', (req, res) => {
 
         .then(productdata => {
             console.log(productdata);
-            res.render('homecopy', { product: productdata });
+            res.render('product', { product: productdata });
         })
         .catch(err => {
             res.status(500).end();
@@ -32,7 +32,7 @@ router.get('/catalog/products/:id', (req, res) => {
     })
         .then(productdata => {
             console.log(productdata);
-            res.render('home', { product: productdata });
+            res.render('singleProduct', { product: productdata });
         })
         .catch(err => {
             console.log(err);
@@ -41,4 +41,17 @@ router.get('/catalog/products/:id', (req, res) => {
 });
 
 
+router.get('/catalog/orders', (req, res) => {
+    Order.findAll({
+      include: [User, Product]
+    })
+    .then(orderdata => {
+        console.log(orderdata);
+        res.render('order', { order: orderdata });
+    })
+    .catch(err => {
+        res.status(500).end();
+    });
+  });
+  
 module.exports = router;
