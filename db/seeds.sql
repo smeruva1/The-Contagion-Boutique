@@ -14,7 +14,9 @@ SELECT * FROM db_contagion.products;
 INSERT INTO users
   (name, userType,email,password, createdAt, UpdatedAt)
 VALUES
-  ('Sudar', 'customer', 'meruva@gmail.com', '1234',now(), now());
+  ('Alex', 'customer', 'alex@gmail.com', '1234',now(), now()),
+  ('Josh', 'customer', 'josh@gmail.com', '5634',now(), now()),
+  ('Joey', 'customer', 'joey@gmail.com', '7734',now(), now());
 
 SELECT * FROM db_contagion.users;
 
@@ -26,4 +28,3 @@ VALUES
 
 SELECT * FROM db_contagion.orders;
 
-VA
