@@ -46,7 +46,7 @@ router.get('/catalog/orders', (req, res) => {
       include: [User, Product]
     })
     .then(orderdata => {
-        console.log(orderdata);
+        //console.log(orderdata);
         res.render('order', { order: orderdata });
     })
     .catch(err => {
