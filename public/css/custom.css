@@ -52,3 +52,7 @@ tr:nth-child(even) {
 	max-width: 1500px;
 	float: none;
 }
+
+.navsignup {
+  margin-left: 350px; 
+}

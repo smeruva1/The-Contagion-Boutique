@@ -22,6 +22,15 @@ $('.add-to-cart').on('click', function () {
     // get product id
     const productID = $(this).attr('data-prodid');
     const productPrice = $(this).attr('data-prodPrice');
+    //const qty = document.getElementById("mySelect").value;
+    //const custId = document.getElementById("customer");
+
+    // const qtyVal = qty.value;
+
+    // console.log("#####################################");
+    // console.log(qty);
+    // alert(qty);
+
     // console.log(productID);
     // alert(productID);
 
