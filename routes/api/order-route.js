@@ -3,6 +3,9 @@ const router = require('express').Router();
 // import models
 const {Product, User, Order} = require('../../models');
 
+// import auth middleware
+const checkAuth = require('../../middleware/check-auth');
+
 // get all orders with associated users
 // will eventually be `/api/orders`
 router.get('/', (req, res) => {
@@ -19,7 +22,7 @@ router.get('/', (req, res) => {
 
 // get one orders with associated users
 // will eventually be `/api/orders/1`
-router.get('/:id', (req, res) => {
+router.get('/:id', checkAuth, (req, res) => {
   Order.findOne({
     where: {
       id: req.params.id

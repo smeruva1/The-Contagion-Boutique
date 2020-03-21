@@ -32,6 +32,7 @@ router.post('/', (req, res) => {
                     exp: Math.floor(Date.now() / 1000) + 60 * 60,
                     data: {
                         name: user.name,
+                        userType: user.userType,
                         email: user.email,
                         id: user.id
                     }
