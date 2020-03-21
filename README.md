@@ -7,6 +7,8 @@ Elevator pitch: In these trying times of unprecedented circumstance in a world r
 Audience: Fashion concerned social distancers
 
 Technologies
+
+
 	Node, express server
 	Seqelize & MySQL
 	3 Models - User, Order, Products
@@ -20,15 +22,21 @@ Technologies
 	prettier
 
 Breakdown of tasks
+
+
 	Frontend : RJ
 	Middleware: Jeff
 	Database: Sudar
 
 Challenges
+
+
 	Frontend express handlebars working with routes and sequelize database.
 	Encrypting db password & reflect the new user data in Heroku
 
 Successes
+
+
 	Fully working website with frontend reading and writing to backend in Heroku
 
 
