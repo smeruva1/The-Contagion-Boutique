@@ -25,9 +25,14 @@
 footer ul{text-decoration: none; list-style-type: none;}
 
 .naomi {
-  width: 1200px;
-  margin: auto;
+  /* width: 1200px;
+  margin: auto; */
+text-align: center;
+}
 
+.naomiImg {
+width:40%;
+height: auto;
 }
 
 table {
@@ -55,4 +60,17 @@ tr:nth-child(even) {
 
 .navsignup {
   margin-left: 350px; 
+}
+
+.logoimg {
+  width: 12%;
+  height: auto;
+  margin-right: 12px; 
+}
+
+.handlebar-navbar{
+  margin-left: auto;
+	margin-right: auto;
+	max-width: 1525px;
+	float: none;
 }
